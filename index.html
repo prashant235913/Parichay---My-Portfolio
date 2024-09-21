@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
         <div class="logo">Prashant Mishra</div>
         <div>
             <ul class="quick-links">
@@ -19,7 +20,26 @@
             </ul>
         </div>
     </nav>
-   
+
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Prashant Mishra</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <!-- <span></span> -->
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <script src="script.js"></script>
 </body>
 </html>

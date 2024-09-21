@@ -1,0 +1,21 @@
+/* Media query for screen sizes 1200px and smaller */
+@media screen and (max-width: 1200px) {
+
+    /* Hide the desktop navigation */
+    #desktop-nav {
+        display: none !important;
+    }
+
+    /* Show the hamburger icon */
+    .hamburger-icon {
+        display: flex !important;
+    }
+
+    /* Show the hamburger navigation */
+    #hamburger-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+}
